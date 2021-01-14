@@ -1,0 +1,95 @@
+$(document).ready(function(){
+    $("#design").click(function(){
+        $("#design").slideDown('1500').hide('1000')
+        $("#design-desc").show("2000")
+    });
+    $("#design-desc").click(function(){
+        $("#design-desc").slideDown('1500').hide('1000')
+        $("#design").show("2000")
+    });
+    $("#dev").click(function(){
+        $("#dev").slideDown('1500').hide('1000')
+        $("#dev-des").show("2000")
+    });
+    $("#dev-des").click(function(){
+        $("#dev-des").toggle('1000')
+        $("#dev").toggle("2000")
+    });
+    $("#productM").click(function(){
+        $("#productM").toggle('1000')
+        $("#pmanagement").toggle("2000")
+    });
+    $("#pmanagement").click(function(){
+        $("#pmanagement").toggle('1000')
+        $("#productM").toggle("2000")
+    });
+});
+$(document).ready(function(){
+    $("#work1").mouseover(function(){
+      $("#overlay1").show();
+    }).mouseout(function(){
+      $("#overlay1").hide();
+    });
+});
+$(document).ready(function(){
+    $("#work2").mouseover(function(){
+      $("#overlay2").show();
+    }).mouseout(function(){
+      $("#overlay2").hide();
+    });
+});
+$(document).ready(function(){
+    $("#work3").mouseover(function(){
+      $("#overlay3").show();
+    }).mouseout(function(){
+      $("#overlay3").hide();
+    });
+});
+$(document).ready(function(){
+    $("#work4").mouseover(function(){
+      $("#overlay4").show();
+    }).mouseout(function(){
+      $("#overlay4").hide();
+    });
+});
+$(document).ready(function(){
+    $("#work5").mouseover(function(){
+      $("#overlay5").show();
+    }).mouseout(function(){
+      $("#overlay5").hide();
+    });
+});
+$(document).ready(function(){
+    $("#work6").mouseover(function(){
+      $("#overlay6").show();
+    }).mouseout(function(){
+      $("#overlay6").hide();
+    });
+});
+$(document).ready(function(){
+    $("#work7").mouseover(function(){
+      $("#overlay7").show();
+    }).mouseout(function(){
+      $("#overlay7").hide();
+    });
+});
+$(document).ready(function(){
+    $("#work8").mouseover(function(){
+      $("#overlay8").show();
+    }).mouseout(function(){
+      $("#overlay8").hide();
+    });
+});
+$(document).ready(function(){
+  $("form.validate").submit(function(){
+     var name = $("input#mce-NAME").val();
+     var email = $("input#mce-EMAIL").val();
+     var message = $("textarea#mce-MESSAGE").val();
+     if ($("input#mce-NAME").val() && $("input#mce-EMAIL").val()){
+       alert (name + " we have received your message. Thank you for reaching out to us.");
+     }
+     else {
+       alert("Please fill the contact form above.");
+     }
+  });
+});
